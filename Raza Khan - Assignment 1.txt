@@ -1,0 +1,524 @@
+// Question 2 : Store a person’s name in a variable, and print a message//
+//----------------------------------------------------------------------//
+const personsName = "Muhammad";
+alert("Asalam-o-alaikum "+personsName+ ", How do you feel today?")
+
+
+// Question 3: Name Cases //
+//----------------------------------------------------------------------//
+const personsName1 = "Muhammad"
+const inLower = (personsName1.toLowerCase() + "<br />");
+const inUpper = (personsName1.toUpperCase() + "<br />");
+document.write(inLower);
+document.write(inUpper);
+"<br />"
+"<br />"
+function inTitle(name) {
+    return name.charAt(0).toUpperCase() + name.slice(1);
+  }
+const capitalize = inTitle("Muhammad");
+document.write(capitalize);
+
+
+// Question 4 : Famous Quote//
+//----------------------------------------------------------------------//
+console.log(" Conficis once said, "+ "\"A person who has failed never tried a new thing\"");
+
+
+// Question 5 : Store famous person and quote in variable and print//
+//----------------------------------------------------------------------//
+var famous_person = "Confucis";
+var quote = "\"A person who has failed never tried a new thing\"";
+console.log(famous_person+ " once said,"+quote);
+
+
+// Question 6 : Stripping Names//
+//----------------------------------------------------------------------//
+var name = "\t Muhammad Raza \n";
+console.log(name.trim());
+
+
+// Question 7 & 8 : Number Eight//
+//----------------------------------------------------------------------//
+console.log(5 + 3);   // Adding two numbers that result 8 as answer
+console.log(2 * 4);   // Multiplying two numbers that result 8 in answer
+console.log(32/4);
+console.log(24-16);
+
+
+// Question 9 : Favorite Number //
+//----------------------------------------------------------------------//
+var favoriteNum = 7;
+alert(favoriteNum+ "is my favourite number is "+favoriteNum);
+
+// Question 10 : Adding Comments//
+//----------------------------------------------------------------------//
+// Comments have been added in Question 7 & 8
+
+
+// Question 11 : Storing name of friends in an array//
+//----------------------------------------------------------------------//
+
+const ListOfFriends = ["Sheraz", "Raza", "Abdullah", "Khalid", "Anjum", "Farhan"];
+console.log(ListOfFriends[0]);
+console.log(ListOfFriends[1]);
+console.log(ListOfFriends[2]);
+console.log(ListOfFriends[3]);
+console.log(ListOfFriends[4]);
+console.log(ListOfFriends[5]);
+
+
+// Question 12 : Personalised Greetings//
+//----------------------------------------------------------------------//
+var msg1 = "Hello "
+var msg2 = ", How are you?";
+console.log(msg1 + ListOfFriends[0] + msg2);
+console.log(msg1 + ListOfFriends[1] + msg2;
+console.log(msg1 + ListOfFriends[2] + msg2);
+console.log(msg1 + ListOfFriends[3] + msg2);
+console.log(msg1 + ListOfFriends[4] + msg2);
+console.log(msg1 + ListOfFriends[5] + msg2);
+
+// Question 13 : Array about favorite mode of transportation//
+//----------------------------------------------------------------------//
+const transportArr = ["Car", "Plane", "Bicycle"];
+const msg3 = "I would like to drive a ";
+console.log(msg3+ transportArr[0]);
+console.log(msg3+ transportArr[1]);
+console.log(msg3+ transportArr[2]);
+
+
+// Guest list - invitation and modification//
+//----------------------------------------//
+
+// Question 14 //
+let CurrentGuests = ["Raza ", "Fatima ", "abdullah "];
+var InvitationMsg = ", I am pleased to invite you to dinner at my home on Oct 30, 2022";
+console.log("Hi " + CurrentGuests[0] + InvitationMsg);
+console.log("Hi " + CurrentGuests[1] + InvitationMsg);
+console.log("Hi " + CurrentGuests[2] + InvitationMsg);
+
+
+// Question 15 : Replace a guest //
+let Gst_Not_Attn_Msg1 = "I am sorry to inform that ";
+let Gst_Not_Attn_Msg2 = " will not be able to come due to his personal engagements. Now we need to arrange another guest for after dinner games";
+console.log(Gst_Not_Attn_Msg1+ CurrentGuests[0] + Gst_Not_Attn_Msg2);
+
+CurrentGuests[0] = "Ahmed";   // replacing Raza with Ahmed as a new guest
+console.log(CurrentGuests);
+
+console.log("Hi " + CurrentGuests[0] + InvitationMsg);
+console.log("Hi " + CurrentGuests[1] + InvitationMsg);
+console.log("Hi " + CurrentGuests[2] + InvitationMsg);
+
+// Question 16 : Addition of three guests //
+console.log("Hi Friends, I am pleased to inform that I have ordered a new dining table that can accomodate 8 people. To celebrate this occassion, I intend to invite few more guests");
+
+CurrentGuests.unshift( "Fareha");
+CurrentGuests.splice(2, 0, "Atif");
+CurrentGuests.push("Khalid");
+
+for (let i = 0; i< CurrentGuests.length; i++){
+    console.log("Hi " + CurrentGuests[i] + InvitationMsg);
+}
+
+// Question 17 //
+
+console.log("I am sorry to inform that new dinner table has not arrived. Due to this unfortunate event, only two guests can be accomodated");
+
+for (let i = CurrentGuests.length-1; i>1; i--){
+    console.log("Hi " + CurrentGuests[i] + "Due to reason cited before, I have to univite you from the dinner. I am extremely sorry but I will invite you again once the new dinner table arrives.");
+CurrentGuests[i].pop();
+}
+
+console.log(CurrentGuests.length);
+for (let i = 0; i< CurrentGuests.length; i++){
+    console.log("Hi " + CurrentGuests[i] + "The Dinner is still ON and you are still invited");
+}
+for (let i = 0; i< CurrentGuests.length; i++){
+    CurrentGuests[i].pop();
+}
+console.log(CurrentGuests.length);
+
+
+// Question 18 : Seeing the world favourite places//
+//----------------------------------------------------------------------//
+let favoritePlaces = ["Tarbela Dam", "Khewara mines", "Lahore Zoo", "Waghga Border", "Fort Lahore"];
+console.log(favoritePlaces);
+console.log(favoritePlaces.slice(0).sort());
+console.log(favoritePlaces);
+console.log(favoritePlaces.slice(0).sort().reverse());
+console.log(favoritePlaces);
+
+console.log(favoritePlaces.reverse());
+console.log(favoritePlaces.reverse());
+console.log(favoritePlaces.sort().reverse());
+console.log(favoritePlaces)
+
+
+// Question 19: Print number of guests in list//
+//----------------------------------------------------------------------//
+console.log(CurrentGuests);
+console.log(CurrentGuests.length);
+
+// Question 20 & 21 // 
+//----------------------------------------------------------------------//
+let A_Info = {furniture: ["Table", "Chair", "Bed"], 
+utensils: ["Jug", "glass", "Plate"], 
+transport: ["Car", "Bike", "Cycle"],
+ tools: ["Plier", "Screw driver", "hammer"], 
+ electricals:["fridge", "microwave", "washing machine"]}
+
+ console.log(A_Info);
+
+// Question 22 //
+//----------------------------------------------------------------------//
+//  const myPersonalName = "Muhammad Raza Khan";
+//  myPersonalName = "Khushamdeed Dunaya";
+//  console.log(myPersonalName);   // Error question because const is blocked scope and can't be redeclared
+
+
+// Question 23 //
+//----------------------------------------------------------------------//
+
+//PART 1
+
+console.log("Is furniture == 'Table'? I predict it to be True.")
+console.log(A_Info.furniture[0] == 'Table')
+
+console.log("Is utensils == 'Jug'? I predict it to be True.")
+console.log(A_Info[0] == 'Jug')
+
+console.log("Is transport == 'Car'? I predict it to be True.")
+console.log(A_Info.transport[0] == 'Car')
+
+console.log("Is tools == 'Plier'? I predict it to be True.")
+console.log(A_Info.tools[0] == 'Plier')
+
+console.log("Is electricals == 'fridge'? I predict it to be True.")
+console.log(A_Info.electricals[0] == 'fridge')
+
+//PART 2
+
+console.log("Is furniture == 'Rack'? I predict it to be False.")
+console.log(A_Info.furniture[0] == 'Rack')
+
+console.log("Is utensils == 'Spoon'? I predict it to be False.")
+console.log(A_Info.utensils[0] == 'Spoon')
+
+console.log("Is transport == 'Truck'? I predict it to be False.")
+console.log(A_Info.transport[0] == 'Truck')
+
+console.log("Is tools == 'Chisel'? I predict it to be False.")
+console.log(A_Info.tools[0] == 'Chisel')
+
+console.log("Is electricals == 'Dryer'? I predict it to be False.")
+console.log(A_Info.electricals[0] == 'Dryer')
+
+
+// Question 24 //
+//-----------------------------------------------------------------//
+
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  nationality: "Pakistani",
+  age: 50,
+  spouse_age: 45,
+  eyeColor: "blue"
+};
+
+if (person.firstName == "MRK"){console.log("It's True")} 
+ else{ console.log("Its false") }
+
+if (person.lastName == "MRK"){console.log("It's True")} 
+ else{ console.log("Its false") }
+
+if (person.age == 50){console.log("It's True")} 
+ else{ console.log("Its false") }
+
+if (person.eyeColor == "blue"){console.log("It's True")} 
+ else{ console.log("Its false") }
+
+var nationality1 = "pakistani";
+if (person.nationality.toLowerCase() == nationality1{
+    console.log("ToLowerCase functions condition is right")
+} else {
+    console.log("Its condition is wrong")
+}
+
+if (age > spouse_age){
+    console.log("Person is older than spouse")
+} else if (age < spouse_age){
+    console.log("Person is younger than spouse")
+} else (age == spouse_age){
+    console.log("Both are equal in age")
+} 
+
+if (age > 40 && spouse_age > 40){
+    console.log("Both are middle aged")
+} else if (age > 40 || spouse_age > 40){
+    console.log("Only one is middle aged")
+} else { console.log("Both are young")
+
+
+const furniture= ["Table", "Chair", "Bed"];
+console.log(furniture.includes("Table"))
+console.log(furniture.includes("Carpet"))
+
+
+
+// Question 25 : Alien Color//
+//----------------------------------------------------------------------//
+var alien_color = prompt("Enter color of alien you just shot down");
+if (alien_color == "green"){
+    console.log("Hurray! You just earned 5 points");
+}
+
+if (alien_color == "green"){
+    console.log("Hurray! You just earned 5 points");
+} else {console.log("What have you shot? Zero points for wrong shooting");}
+
+// Question 26 //
+//----------------------------------------------------------------------//
+var alien_color2 = prompt("Enter color of alien you just shot down");
+if (alien_color2 == "green"){
+    console.log("You earned 5 points");
+} else if ( alien_color2 != "green");{
+    console.log("He have earned 10 ponits");
+}
+
+// Question 27 //
+//----------------------------------------------------------------------//
+var alien_color3 = prompt("Enter color to earn points");
+if (alien_color3 == "green"){
+    console.log("He earned 5 points");
+} else if ( alien_color3 == "yellow"){
+    console.log("He earned 10 points")
+} else if ( alien_color3 == "red"){
+    console.log("He earned 15 points")
+}
+
+// Question 28 : Stages of Life//
+//----------------------------------------------------------------------//
+var AgeOfPerson = prompt("Enter your age please");
+if (AgeOfPerson < 2){
+    console.log("This person is a baby");
+} else if (AgeOfPerson ==2 || AgeOfPerson < 4){
+    console.log("This person is a toddler");
+} else if (AgeOfPerson == 4 || AgeOfPerson < 13){
+    console.log("This person is a kid");
+} else if (AgeOfPerson == 13 || AgeOfPerson < 20){
+    console.log("This person is a teenager");
+} else if (AgeOfPerson == 20 || AgeOfPerson < 65){
+    console.log("This person is an adult");
+} else {console.log("This person is an elder"); }
+
+
+
+
+// Question 29 : favourite Fruits//
+//----------------------------------------------------------------------//
+var favorite_fruits = ["Bananas", "Apple", "Mango"]
+if (favorite_fruits.includes("Bananas")){
+    console.log("Monkey really like bananas");
+} if (favorite_fruits.includes("Apple")){
+    console.log("An apple a day keeps the doctor away");
+} if (favorite_fruits.includes("Mango")){
+    console.log("Mango is the king of fruits");
+} if (favorite_fruits.includes("Orange")){
+    console.log("Oranges contain vitamin C")
+} if (favorite_fruits.includes("Melon")){
+    console.log("Melons contain sufficient water")
+}
+
+// Question 30 : User Login messaging//
+//----------------------------------------------------------------------//
+var UsersLIST = ["Admin", "Raza", "Fatima", "Muhammad", "Abdullah"];
+
+var YourLoginID = prompt("Enter your login ID");
+
+
+if (YourLoginID == "Admin"){
+    console.log("Hello, What admin activities you wish to perform?")}
+    else if ( YourLogiID!="Admin") {
+	for (let i = 0; i < UsersLIST.length; i++){
+    		if(YourLoginID == UsersLIST[i]){
+        	console.log("Hello "+ UsersLIST[i]+ " thank you for logging again")
+    	}
+} 
+
+
+
+// Question 31 //
+//----------------------------------------------------------------------//
+if (UsersLIST != null){             //Question 31
+    console.log("List is not empty")
+ }
+
+UsersLIST = UsersLIST.splice(5, 4);
+console.log(UsersLIST.length);
+if (UsersLIST.length == 0){
+    console.log("We need to find some users");
+}
+
+
+// Question 32 //
+//----------------------------------------------------------------------//
+current_users = ["Admin", "Raza", "Fatima", "Muhammad", "Abdullah"];
+new_users = ['Raza', 'Sheraz', 'Ahmed', 'Munir', 'Khadija']
+
+for (i=0; i<new_users.length();i++){
+	for (j=0; j<current_users.length();j++){
+		if (new_users[i].toUpperCase() == current_users[j].toUpperCase()){
+			console.log("This user name already exists. Pick another ID");
+		}
+	}
+}
+
+// Question 33 //
+//----------------------------------------------------------------------//
+for (let i =1; i < 10; i++){
+    if (i == 1){
+        console.log(i+"st" + "\n")
+    } else if (i == 2){
+        console.log(i+"nd" + "\n")
+    } else if (i == 3){
+        console.log(i+"rd" + "\n")
+    } else{
+        console.log(i+"th" + "\n")
+    }
+}
+
+
+// Question 34 : Pizzas//
+//----------------------------------------------------------------------//
+var favoritePizza = ["Chicken Tikka", "Beef Tikka", "Four Seasons"];
+for (var i = 0; i < favoritePizza.length; i++){
+    console.log("I love to eat "+ favoritePizza[i] +" pizza.")
+}
+console.log("I really love eating pizza only when I am all alone! Humm!");
+
+// Question 35 : Animals//
+//----------------------------------------------------------------------//
+var animals = ["cat", "dog", "Horse"];
+for (i = 0; i < animals.length; i++) {
+    console.log(animals[i] + " would make a great pet");
+}
+console.log("Any of these animals would make a great pet!");
+
+// Question 36 : Tshirts and functions//
+//----------------------------------------------------------------------//
+function make_shirt(size, message) {
+    console.log("I wish to print " + message + " on size" + size + "shirt");
+}
+make_shirt(40, "I love Pakistan");
+
+// Question 37 : Large T-shirts//
+//----------------------------------------------------------------------//
+function make_shirt(size, message) {
+    console.log("I wish to print " + message + " on size" + size + "shirt");
+}
+
+var ShirtSize = prompt("Enter your shirt Size");
+var ShirtMsg = prompt("Enter your message");
+
+if (ShirtSize == "Small"){
+	make_shirt(ShirtSize, ShirtMsg);
+else if (ShirtSize== "medium"){
+	make_shirt(ShirtSize, "I Love Java"){
+else {
+	make_shirt("Large", "I Love Java")
+}
+
+
+// Question 38 //
+//----------------------------------------------------------------------//
+const describe_city = (city, country = "Pakistan") => {
+    console.log(city + " is in " + country);
+}
+describe_city("Karachi");
+describe_city("Islamabad");
+describe_city("Paris", "France");
+
+
+// Question 39 //
+//----------------------------------------------------------------------//
+const city_country = (cityName, country) => {
+    console.log(" '" + cityName, ",", country + "'");
+}
+
+city_country("Lahore", "Pakistan")
+
+// Question 40 //
+//----------------------------------------------------------------------//
+const make_album = (artistName, albumTitle, tracks = 0) => {
+    album = {
+        "artist": artistName,
+        "album": albumTitle,
+        "tracks": tracks
+    }
+
+    return album;
+}
+
+var callAlbum = make_album("Nusrat Fateh Ali", "Judai");
+console.log(callAlbum)
+var callAlbum = make_album("Rahat Fateh Ali", "Jogi");
+console.log(callAlbum)
+var callAlbum = make_album("Atif Aslam", "hum Tum", tracks = 8);
+console.log(callAlbum)
+
+// Question 41 : Magicians//
+//----------------------------------------------------------------------//
+function show_magician(magicians) {
+    for (i = 0; i < magicians.length; i++) {
+        console.log(magicians)
+    }
+}
+
+magicians = ["Bill gates", "Elon Musk", "Mark Zucker"]
+for (i = 0; i < magicians.length; i++) {
+    console.log(magicians[i])
+}
+
+
+// Question 42 & 43: Great Magicians//
+//----------------------------------------------------------------------//
+function make_great(magicians) {
+
+    for (i = 0; i < magicians.length; i++) {
+        console.log(magicians[i] + " the great")
+    }
+}
+
+make_great(magicians)
+const newMagicianArr = show_magician(magicians);
+console.log(newMagicianArr);
+
+// Question 44 //
+//----------------------------------------------------------------------//
+const make_sandwich = function (...items) {
+    console.log("\nI'll make you a great sandwich:");
+    for ( i = 0; i < items.length; i++){
+        console.log("  ...adding " + items[i] + " to your sandwich.")
+    }
+}
+make_sandwich('Chicken roast', 'Cheddar cheese', 'Vegetable mayonese', 'Pickle');
+console.log("These sandwiches are ordered");
+
+// Question 45 //
+//----------------------------------------------------------------------//
+function make_car(manufacturer, model, ...options){
+    car_dict = {
+        'manufacturer': manufacturer,
+        'model': model,
+        }
+   for (option of options){
+    car_dict[option] = options;
+   }
+   return car_dict;
+}
+
+var my_outback = make_car('subaru', 'outback', color='blue', tow_package=true);
+console.log(my_outback)
